@@ -10,9 +10,9 @@ function round() {
   $(divSelector).addClass("target");
   $(divSelector).text(hits + 1);
   div.obj = divSelector;
-  if (hits == 0) {
-    firstHitTime = getTimestamp();
-  }  
+  //if (hits == 0) {
+    //firstHitTime = getTimestamp();
+  //}  
   console.log(firstHitTime);
  
 
@@ -51,6 +51,7 @@ function init() {
   function show() {
     $("#AllField").removeClass("d-none");
     $("#button-start").addClass('d-none');
+    firstHitTime = getTimestamp();
   }
   $("#button-start").click(show);
   round();
